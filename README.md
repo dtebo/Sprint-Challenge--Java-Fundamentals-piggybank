@@ -31,32 +31,32 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Create the proper directory structure for developing a Java Application
-- [ ] Push commits: `git push origin <firstName-lastName>`
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create the proper directory structure for developing a Java Application
+- [x] Push commits: `git push origin <firstName-lastName>`
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [x] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
 
-- [ ] You are creating a project from scratch! There is no initial project from where to start.
-- [ ] Using the wizard in IntelliJ, create a Java Spring Application
-  - [ ] Name the application piggybank
-  - [ ] Steps to remember in generating the initial application
-    - [ ] Set the Group and Artifact Name
-    - [ ] Set that this is a Maven Project
-    - [ ] Select the proper Java Version
-    - [ ] Select Spring Boot Version 2.2.X
-    - [ ] Add the 4 Dependencies we need for a Java Spring Database Application
-    - [ ] You do not need to use services or configuration packages
-    - [ ] You do need to
-      - [ ] update your POM.XML so H2 will work
-      - [ ] update the applications.properties configuration file
-      - [ ] add the data.sql file
-      - [ ] create the necessary packages (at least 3 are needed) and classes
+- [x] You are creating a project from scratch! There is no initial project from where to start.
+- [x] Using the wizard in IntelliJ, create a Java Spring Application
+  - [x] Name the application piggybank
+  - [x] Steps to remember in generating the initial application
+    - [x] Set the Group and Artifact Name
+    - [x] Set that this is a Maven Project
+    - [x] Select the proper Java Version
+    - [x] Select Spring Boot Version 2.2.X
+    - [x] Add the 4 Dependencies we need for a Java Spring Database Application
+    - [x] You do not need to use services or configuration packages
+    - [x] You do need to
+      - [x] update your POM.XML so H2 will work
+      - [x] update the applications.properties configuration file
+      - [x] add the data.sql file
+      - [x] create the necessary packages (at least 3 are needed) and classes
 - [ ] Create a model Coin to represent the table for the piggy bank
   - Each row in the table contains: (use the provided data.sql as a guide)
     - The number of coins in this group
