@@ -23,47 +23,67 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
+
+A. I used Java classes and repositories to build out the model, repository, and controller. 
+I also created properties in the model class for every required data field and generated the getters/setters.
+I created an instance of the repository interface in order to perform crud operations on the required endpoints.
+
+
 2. Explain the three steps needed to run a Java application (using the JDK) including what each step does and how those step correlate to running a JavaScript application.
+
+A. The following three steps are required to run a Java application using the JDK:
+    1. Convert the source code to byte code using javac
+    2. Archive the generated class files into a .jar file using the jar command
+    2. Run the jar file using the java -jar <jarfilename> command
+    
 3. Explain how Java being a strongly typed language affected you solution.
+
+A. Java being a strongly typed language meant that I had to make sure I specified the
+correct data types on my classes and variables. I also had to make sure that I had specified
+the correct access modifiers
+
 4. Can you explain the differences between Abstract Classes and Interfaces including how they are used in your application?
+
+A. Abstract classes allow me to implement methods inside of the class while interfaces do not allow that (you can only declare methods in them).
+An interface was used in my program to create a repository that extends from the existing CrudRepository interface.
 
 ## Instructions
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Create the proper directory structure for developing a Java Application
-- [ ] Push commits: `git push origin <firstName-lastName>`
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Create the proper directory structure for developing a Java Application
+- [x] Push commits: `git push origin <firstName-lastName>`
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [x] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
 
-- [ ] You are creating a project from scratch! There is no initial project from where to start.
-- [ ] Using the wizard in IntelliJ, create a Java Spring Application
-  - [ ] Name the application piggybank
-  - [ ] Steps to remember in generating the initial application
-    - [ ] Set the Group and Artifact Name
-    - [ ] Set that this is a Maven Project
-    - [ ] Select the proper Java Version
-    - [ ] Select Spring Boot Version 2.2.X
-    - [ ] Add the 4 Dependencies we need for a Java Spring Database Application
-    - [ ] You do not need to use services or configuration packages
-    - [ ] You do need to
-      - [ ] update your POM.XML so H2 will work
-      - [ ] update the applications.properties configuration file
-      - [ ] add the data.sql file
-      - [ ] create the necessary packages (at least 3 are needed) and classes
-- [ ] Create a model Coin to represent the table for the piggy bank
+- [x] You are creating a project from scratch! There is no initial project from where to start.
+- [x] Using the wizard in IntelliJ, create a Java Spring Application
+  - [x] Name the application piggybank
+  - [x] Steps to remember in generating the initial application
+    - [x] Set the Group and Artifact Name
+    - [x] Set that this is a Maven Project
+    - [x] Select the proper Java Version
+    - [x] Select Spring Boot Version 2.2.X
+    - [x] Add the 4 Dependencies we need for a Java Spring Database Application
+    - [x] You do not need to use services or configuration packages
+    - [x] You do need to
+      - [x] update your POM.XML so H2 will work
+      - [x] update the applications.properties configuration file
+      - [x] add the data.sql file
+      - [x] create the necessary packages (at least 3 are needed) and classes
+- [x] Create a model Coin to represent the table for the piggy bank
   - Each row in the table contains: (use the provided data.sql as a guide)
     - The number of coins in this group
     - The face value of the coins in the group
     - The name of a single coin
     - The name of more than one coin
-- [ ] Create an endpoint http://localhost:2019/total that prints to console the contents of the Piggy Bank as follows and returns an HTTP Status of OK:
+- [x] Create an endpoint http://localhost:2019/total that prints to console the contents of the Piggy Bank as follows and returns an HTTP Status of OK:
 
 In your console in IntelliJ you should see:
 
@@ -88,11 +108,11 @@ Note: that when you have more than 1 coin, the plural of the coin's name is prin
 
 ### Required best practices
 
-- [ ] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
-- [ ] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
-- [ ] Consistent quotation usage.
-- [ ] Spell-check.
-- [ ] Schedule time to review, refine and reassess your work.
+- [x] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
+- [x] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
+- [x] Consistent quotation usage.
+- [x] Spell-check.
+- [x] Schedule time to review, refine and reassess your work.
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 
@@ -128,6 +148,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete after receiving your pull-request
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [x] Add your team lead as a reviewer on the pull-request
+- [x] Your team lead will count the project as complete after receiving your pull-request
